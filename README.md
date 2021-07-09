@@ -1,5 +1,7 @@
 # Visualizing Order Books with Perspective
 
+![GIF of ETHUSD Order Book Dashboard using Perspective](https://i.imgur.com/TKYRDh2.gif)
+
 Using [Perspective](https://perspective.finos.org), we can create interactive
 visualizations on a streaming order book, analyzing and dissecting it as new
 orders come in and the state of the book changes to reflect the market.
