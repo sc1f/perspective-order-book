@@ -20,7 +20,7 @@ kept in sync with the server automatically.
 Install the JS and Python dependencies:
 
 ```bash
-yarn
+npm install
 python3 -m pip install perspective-python websocket-client
 ```
 
@@ -29,11 +29,11 @@ python3 -m pip install perspective-python websocket-client
 The server and client need to be run in separate processes:
 
 ```bash
-yarn start
+npm run start:client
 ```
 
 and in another terminal window:
 
 ```bash
-yarn start:server
+npm run start:server
 ```
