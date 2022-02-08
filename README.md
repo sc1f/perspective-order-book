@@ -28,12 +28,22 @@ python3 -m pip install perspective-python websocket-client
 
 The server and client need to be run in separate processes:
 
+To run the React frontend:
+
 ```bash
 npm run start:client
 ```
 
-and in another terminal window:
+To run the Python backend:
 
 ```bash
 npm run start:server
 ```
+
+Or to run the NodeJs backend: 
+
+```bash
+npm run start:node:server
+```
+
+Then visit localhost:3000 in your browser. 
