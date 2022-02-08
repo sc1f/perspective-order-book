@@ -17,9 +17,9 @@ const worker = perspective.shared_worker();
  * @param {String} table_name 
  * @returns 
  */
-const datasource = async function(table_name) {
+const datasource = async function (table_name) {
     // Open the table on the server, and create a view on the server.
-    const server_table = websocket.open_table(table_name);
+    const server_table = await websocket.open_table(table_name);
     const server_view = await server_table.view();
 
     // Create a table in the browser which mirrors the table on the server.
@@ -45,11 +45,13 @@ const datasource = async function(table_name) {
  */
 window.addEventListener("load", async () => {
     const order_book = await datasource("order_book");
+    const el = document.getElementById("order-book");
+    el.load(order_book);
 
     // Register the client-side table we just created.
     window.workspace.tables.set("order_book", order_book);
 
-    window.workspace.addEventListener("workspace-layout-update", async function() {
+    window.workspace.addEventListener("workspace-layout-update", async function () {
         localStorage.setItem("layout", JSON.stringify(await window.workspace.save()))
     });
 
