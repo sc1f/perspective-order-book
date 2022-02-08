@@ -1,4 +1,4 @@
-const WebSocket = require('ws');
+const WebSocket = require("ws");
 const perspective = require("@finos/perspective");
 const schema = require("./schema");
 const { WebSocketServer, table } = perspective;
