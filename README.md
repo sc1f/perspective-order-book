@@ -37,7 +37,7 @@ npm run start:client
 To run the Python backend:
 
 ```bash
-npm run start:server
+npm run start:python:server
 ```
 
 Or to run the NodeJs backend: 
