@@ -7,8 +7,8 @@
   "private": true,
   "scripts": {
     "start:client": "vite",
-    "start:node:server": "node src/nodejs_server/index.js",
-    "start:python:server": "python3 src/server/server.py",
+    "start:node:server": "node src/servers/nodejs/index.js",
+    "start:python:server": "python3 src/servers/python/server.py",
     "build": "vite build",
     "preview": "vite preview"
   },
