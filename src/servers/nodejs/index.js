@@ -2,7 +2,7 @@ const WebSocket = require("ws");
 const perspective = require("@finos/perspective");
 const schema = require("./schema");
 const { WebSocketServer, table } = perspective;
-const perspectiveHost = new WebSocketServer({ port: 8080 });
+const perspectiveHost = new WebSocketServer({ port: 8081 });
 
 perspective.initialize_profile_thread();
 

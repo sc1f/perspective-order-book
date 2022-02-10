@@ -6,7 +6,7 @@ import "@finos/perspective-viewer-d3fc";
 import "@finos/perspective-workspace";
 
 const worker = perspective.shared_worker();
-const url = "ws://localhost:8080/websocket";
+const url = "ws://localhost:8081/websocket";
 const websocket = perspective.websocket(url);
 
 function Landing() {
